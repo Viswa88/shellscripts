@@ -7,7 +7,7 @@ echo "--- enshuring preconditions"
 mkdir -p $SOLR_ARCHIVEDIR
 
 echo "--- cleaning up"
-cd /opt/solr/
+cd $SOLR_LOCATION
 sudo rm -rf bin
 sudo rm -rf conf
 sudo rm -f README.txt
@@ -30,7 +30,7 @@ unzip $SOLR_ARCHIVE 1>/dev/null
 
 echo "--- installing SOLR"
 cp -Rf $SOLR_NAME/example/solr/* $SOLR_LOCATION
-sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* /opt/solr/conf/
+sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* $SOLR_LOCATION/conf/
 
 
 echo "--- perform additional SOLR related configuration"

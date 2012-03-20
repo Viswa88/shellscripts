@@ -36,5 +36,5 @@ sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* /opt/solr/conf/
 
 echo "--- perform additional SOLR related configuration"
 cd /www/a/config/deployment/dev-config/sandbox/ui/
-sudo cp $WORKSPACE/config/dev-config/sandbox/ui/solr.connection.properties .
-
+#sudo cp $WORKSPACE/config/dev-config/sandbox/ui/solr.connection.properties .
+pwd

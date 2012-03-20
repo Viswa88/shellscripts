@@ -4,7 +4,6 @@ cd ../
 source macysCommon.sh
 
 echo "--- enshuring preconditions"
-mkdir -p /opt/solr/archive
 mkdir -p $SOLR_ARCHIVEDIR
 
 echo "--- cleaning up"
@@ -16,7 +15,7 @@ sudo rm -f solr.xml
 
 
 echo "--- retrieving SOLR"
-cd /opt/solr/archive
+cd $SOLR_ARCHIVEDIR
 
 if [ ! -f /opt/solr/archive/$SOLR_ARCHIVE ]
 then
@@ -36,5 +35,4 @@ sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* /opt/solr/conf/
 
 echo "--- perform additional SOLR related configuration"
 cd /www/a/config/deployment/dev-config/sandbox/ui/
-#sudo cp $WORKSPACE/config/dev-config/sandbox/ui/solr.connection.properties .
-pwd
+sudo cp $WORKSPACE/config/dev-config/sandbox/ui/solr.connection.properties .

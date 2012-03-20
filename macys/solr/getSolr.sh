@@ -4,7 +4,6 @@ cd ../
 source macysCommon.sh
 
 echo "--- enshuring preconditions"
-mkdir -p /opt/solr/archive
 mkdir -p $SOLR_ARCHIVEDIR
 
 echo "--- cleaning up"
@@ -16,9 +15,9 @@ sudo rm -f solr.xml
 
 
 echo "--- retrieving SOLR"
-cd /opt/solr/archive
+cd $SOLR_ARCHIVEDIR
 
-if [ ! -f /opt/solr/archive/$SOLR_ARCHIVE ]
+if [ ! -f $SOLR_ARCHIVEDIR/$SOLR_ARCHIVE ]
 then
 	wget http://mirrors.hostingromania.ro/apache.org//lucene/solr/3.5.0/$SOLR_ARCHIVE
 fi
@@ -36,3 +35,4 @@ sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* /opt/solr/conf/
 
 echo "--- perform additional SOLR related configuration"
 cd /www/a/config/deployment/dev-config/sandbox/ui/
+sudo cp $WORKSPACE/config/dev-config/sandbox/ui/solr.connection.properties .

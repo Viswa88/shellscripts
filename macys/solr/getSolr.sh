@@ -5,7 +5,7 @@ source macysCommon.sh
 
 echo "--- enshuring preconditions"
 mkdir -p /opt/solr/archive
-
+mkdir -p $SOLR_ARCHIVEDIR
 
 echo "--- cleaning up"
 cd /opt/solr/
@@ -30,7 +30,7 @@ unzip $SOLR_ARCHIVE 1>/dev/null
 
 
 echo "--- installing SOLR"
-cp -Rf $SOLR_NAME/example/solr/* ../
+cp -Rf $SOLR_NAME/example/solr/* $SOLR_LOCATION
 sudo cp -rf $WORKSPACE/stella-search/config/solr/conf/* /opt/solr/conf/
 
 

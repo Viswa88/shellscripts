@@ -6,7 +6,7 @@ cd ../
 source macysCommon.sh
 
 echo "--- enshuring preconditions"
-mkdir -p $TEST_SOLR_ARCHIVEDIR
+mkdir -p $SOLR_ARCHIVEDIR
 mkdir -p $TEST_SOLR_LOCATION
 
 echo "--- cleaning up"
@@ -18,9 +18,9 @@ sudo rm -f solr.xml
 
 
 echo "--- retrieving SOLR"
-cd $TEST_SOLR_ARCHIVEDIR
+cd $SOLR_ARCHIVEDIR
 
-if [ ! -f $TEST_SOLR_ARCHIVEDIR/$TEST_SOLR_ARCHIVE ]
+if [ ! -f $SOLR_ARCHIVEDIR/$TEST_SOLR_ARCHIVE ]
 then
 	wget http://mirrors.hostingromania.ro/apache.org//lucene/solr/3.5.0/$TEST_SOLR_ARCHIVE
 fi

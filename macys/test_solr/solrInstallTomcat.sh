@@ -5,7 +5,7 @@ set -e
 pwd
 cd ../
 source macysCommon.sh
-cd solr
+cd test_solr
 
 echo "----: INFO : enshuring the tomcat archive exists"
 if [ -d $tomcatArchivePath ]
@@ -25,5 +25,5 @@ cd $TOMCAT_ARCHIVEDIR
 echo "----: INFO : Installing SOLR Tomcat..."
 tar -zxf $tomcatArchivePath
 mv -f $tomcatFileName $TEST_SOLR_TOMCAT
-cp $MACYS_BASEDIR/solr/overrides/bin/startup.sh $TEST_SOLR_TOMCAT/bin/
-cp $MACYS_BASEDIR/solr/overrides/conf/server.xml $TEST_SOLR_TOMCAT/conf/
+cp $MACYS_BASEDIR/test_solr/overrides/bin/startup.sh $TEST_SOLR_TOMCAT/bin/
+cp $MACYS_BASEDIR/test_solr/overrides/conf/server.xml $TEST_SOLR_TOMCAT/conf/

@@ -20,7 +20,7 @@ cd /opt/solr/archive
 
 if [ ! -f /opt/solr/archive/$SOLR_ARCHIVE ]
 then
-	wget http://mirrors.hostingromania.ro/apache.org//lucene/solr/3.5.0/$SOLR_ARCHIVE
+	wget http://mirrors.hostingromania.ro/apache.org//lucene/solr/3.4.0/$SOLR_ARCHIVE
 fi
 
 

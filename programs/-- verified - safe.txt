@@ -1,0 +1,1 @@
+- work is needed to continue removing the speciffic scripts in each directory here - these are not installed right now because they are not general enough

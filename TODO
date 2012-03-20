@@ -1,0 +1,6 @@
+- find the tomcat directory
+- devel_install script - install everything no matter where it is and how the directory structure changes
+
+- go through all the scripts, document and standardize the output info messages format
+
+- start the nexus tomcat with the tomcat script instead of by hand

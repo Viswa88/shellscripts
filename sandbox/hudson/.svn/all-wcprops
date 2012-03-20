@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jazzallerts_jazzalerts/!svn/ver/413/Configuration/trunk/src/main/resources/shellScripts/hudson
+END
+hudson.sh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jazzallerts_jazzalerts/!svn/ver/413/Configuration/trunk/src/main/resources/shellScripts/hudson/hudson.sh
+END
+start-hudson.sh
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jazzallerts_jazzalerts/!svn/ver/413/Configuration/trunk/src/main/resources/shellScripts/hudson/start-hudson.sh
+END
+stop-hudson.sh
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jazzallerts_jazzalerts/!svn/ver/413/Configuration/trunk/src/main/resources/shellScripts/hudson/stop-hudson.sh
+END

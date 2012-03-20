@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com"
+	xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+	<classpath fallback="default">
+		<dir name="/opt/workspaces/scs/main/components/sipXconfig/web/bin.eclipse" />
+		<!--<dir name="/opt/workspaces/scs/main/components/sipXconfig/web/context" /> -->
+
+		<dir name="/opt/workspaces/scs/main/components/sipXconfig/neoconf/bin.eclipse" />
+	</classpath>
+
+	<web>
+		<link target="/">
+			<!-- <dir name="/opt/workspaces/scs/main/components/sipXconfig/web/context/WEB-INF" /> -->
+			<dir name="/opt/workspaces/scs/main/components/sipXconfig/web/context" />
+
+		</link>
+	</web>
+
+</application>

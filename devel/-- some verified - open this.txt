@@ -1,0 +1,3 @@
+- the tomcat stuff still needs work
+- in maven, one script works, one is TODO
+ 

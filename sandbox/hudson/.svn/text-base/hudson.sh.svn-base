@@ -1,0 +1,16 @@
+#!/bin/bash
+
+hudson_dir="/opt/kits/devel/hudson"
+
+echo "--- Clearing the Hudson directory just in case"
+rm -R -f $hudson_dir
+
+echo "--- Recreating the Hudson directory"
+mkdir -pv $hudson_dir
+
+echo "--- Downloading latest Hudson release"
+wget http://hudson-ci.org/latest/hudson.war --directory-prefix=$hudson_dir
+
+echo "--- Creating Hudson log"
+sudo touch $hudson_dir"/hudson.log"
+sudo chmod a+w $hudson_dir"/hudson.log"

@@ -1,5 +1,5 @@
 #!/bin/sh
-export JAVA_OPTS="$JAVA_OPTS -Dsolr.solr.home=/opt/solr/runtime"
+export JAVA_OPTS="$JAVA_OPTS -Dsolr.solr.home=/opt/solr"
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.

@@ -1,10 +1,13 @@
 #!/bin/bash
 
+set -e
+
 cd ../
 source macysCommon.sh
 
 echo "--- enshuring preconditions"
 mkdir -p $SOLR_ARCHIVEDIR
+mkdir -p $SOLR_LOCATION
 
 echo "--- cleaning up"
 cd $SOLR_LOCATION

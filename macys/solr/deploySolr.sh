@@ -21,7 +21,7 @@ rm -f logs/catalina.out 2>/dev/null
 
 
 echo "--- deploying SOLR"
-cp /opt/solr/archive/apache-solr-3.5.0/dist/$SOLR_NAME.war $SOLR_TOMCAT/webapps/solr.war
+cp $SOLR_ARCHIVEDIR/apache-solr-3.5.0/dist/$SOLR_NAME.war $SOLR_TOMCAT/webapps/solr.war
 
 
 echo "--- starting SOLR"
